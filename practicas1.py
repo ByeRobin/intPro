@@ -79,7 +79,50 @@ incremento = (montoinicial * 6/100) * meses
 monto_a_devolver = montoinicial + incremento
 print(f'Al finalizar tu plazo, el incremento el total a devolver sera de: {monto_a_devolver}')
 
-#Ejercicio 14
+#Ejercico 14
+
+llamadas_totales = float(input("Ingresa el total de llamadas realizadas: "))
+minutos = float(input("ingresa la cantidad de minutos utilizados: "))
+
+NombreDelUsuario = {
+    "Total de llamadas", llamadas_totales,
+    "cantidad de minutos", minutos,
+}
+
+costo_final = (1.5 * minutos) + llamadas_totales * 12
+print(f"El costo total es: {costo_final}")
+
+#Ejercicio 15
+
+sueldo_base = 42000
+
+venta1 = int(input("De cuanto fue tu primera venta: "))
+venta2 = int(input("De cuanto fue tu segunda venta: "))
+venta3 = int(input("De cuanto fue tu tercera venta: "))
+
+saldo_final = sueldo_base + venta1 *10 /100 + venta2 *10 /100 + venta3 * 10 /100
+print(saldo_final)
+
+#Ejercicio 16
+segundos_del_dia = 24*60*60
+segundos_de_una_hora = 60*60
+print(f"Una hora tiene {segundos_de_una_hora} segundos, y un dia {segundos_del_dia}.")
+
+segundos_para_calcular = int(input("Ingrese una cantidad de segundos: "))
+segundos_a_minutos = print(round(segundos_para_calcular / 60)) 
+segundos_a_horas = print(round(segundos_para_calcular/60/60))
+segundos_a_dias = print(round(segundos_para_calcular/60/60/24))
+
+#Ejercicio 17
+
+lista_de_billetes = [100,200,500,1000]
+retiro = int(input("Ingresa el monto a retirar: "))
+
+billetes_1000 = retiro // 1000
+resto_de_billetes = retiro % 1000
+if resto_de_billetes => 500
+print(f"el cajero solatara {billetes_1000} billetes de mil\n el cajero soltara {resto_de_billetes} en billetes menores")
+
 
 #ejercicio 20
 x = input("El valor de x es: ")
