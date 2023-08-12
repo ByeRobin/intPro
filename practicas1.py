@@ -116,18 +116,64 @@ segundos_a_dias = print(round(segundos_para_calcular/60/60/24))
 #Ejercicio 17
 
 lista_de_billetes = [100,200,500,1000]
-retiro = int(input("Ingresa el monto a retirar: "))
+retiro = int(input("(Si el valor del monto es menor a 100 no se podra retirar)\nIngresa el monto a retirar: "))
 
+#Cuantos de 1000
 billetes_1000 = retiro // 1000
+print(f"El cajero soltara {billetes_1000} billetes de 1000")
+
+#Cuanto sobra
 resto_de_billetes = retiro % 1000
-if resto_de_billetes => 500
-print(f"el cajero solatara {billetes_1000} billetes de mil\n el cajero soltara {resto_de_billetes} en billetes menores")
+print(resto_de_billetes)
 
+#Cuantos de 500
+billetes_de_500 = resto_de_billetes // 500
+print(f"El cajero soltara {billetes_de_500} billetes de 500")
 
-#ejercicio 20
+#Cuanto sobra
+resto_de_billetes2 = resto_de_billetes % 500
+print(resto_de_billetes2)
+
+#Conseguir cuantos de 200
+billetes_de_200 = resto_de_billetes2 // 200
+print(f"El cajero soltara {billetes_de_200} billetes de 200")
+
+#Cuanto sobra
+resto_de_billetes3 = resto_de_billetes2 % 200
+print(resto_de_billetes3)
+
+#Cuantos de 100
+billetes_de_100 = resto_de_billetes3 // 100
+print(f"El cajero soltara {billetes_de_100} billetes de 100")
+
+#Cuanto sobra
+resto_de_billetes4 = resto_de_billetes3 % 100
+print(billetes_de_100)
+
+#Ejercicio 18
+
+segundos = int(input('Ingresa la cantidad de segundos: '))
+minutos = round(segundos / 60)
+horas = round(minutos / 60)
+dias = round(horas/24)
+
+print(f'{segundos} segundos son: {minutos},{horas} y {dias}')
+
+#Ejercicio 19
+
+primeraVariable = input('Ingresa el valor de x: ')
+segundaVariable = input('Ingresa el valor de y: ')
+
+x == segundaVariable
+y == primeraVariable
+
+print(f'El valor de x es: {x}')
+print(f'El valor de y es: {y}')
+
+#Ejercicio 20
+
 x = input("El valor de x es: ")
 y = input("El valor de y es: ")
 z = input("El valor de z es: ")
 
 print(f"El valor de x es {x}, el valor de y es {y} y el valor de z es {z}")
-
