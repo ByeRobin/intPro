@@ -188,50 +188,72 @@ b = int(input("Ingrese un numero entero: "))
 c = int(input("Ingrese un numero entero: "))
 print("Usted ingresó los valores:", a, b, c)
 
-if a > b and a > c and b > c:
-    cmayor = a
-    bmedio = b
-    amenor = c
-    print (f"{amenor},{bmedio},{cmayor}")
-elif a > b and a > c and c > b:
-    cmayor = a
-    bmedio = c
-    amenor = b
-    print (f"{amenor},{bmedio},{cmayor}")
-elif b > a and b > c and a > c:
-    cmayor = b
-    bmedio = a
-    amenor = c
-    print (f"{amenor},{bmedio},{cmayor}")
-elif b > a and b > c and c > a:
-    cmayor = b
-    bmedio = c
-    amenor = a
-    print (f"{amenor},{bmedio},{cmayor}")
-elif c > a and c > b and b > a:
-    cmayor = c
-    bmedio = b
-    amenor = a
-    print (f"{amenor},{bmedio},{cmayor}")
-elif c > a and c > b and a > b:
-    cmayor = c
-    bmedio = a
-    amenor = b
-    print (f"{amenor},{bmedio},{cmayor}")
-else: print('Error, caso no contemplado')
+if a > b:
+    a,b = b,a
+if a > c: 
+    a,c = c,a
+if b > c:
+    b,c = c,b
+print(f"El mayor es {c}, el mediano es {b} y el menor es {a}")
+
+#if a > b and a > c and b > c:
+#   cmayor = a
+#    bmedio = b
+#    amenor = c
+#   print (f"{amenor},{bmedio},{cmayor}")
+#elif a > b and a > c and c > b:
+#    cmayor = a
+#    bmedio = c
+#    amenor = b
+#    print (f"{amenor},{bmedio},{cmayor}")
+#elif b > a and b > c and a > c:
+#    cmayor = b
+#    bmedio = a
+#    amenor = c
+#    print (f"{amenor},{bmedio},{cmayor}")
+#elif b > a and b > c and c > a:
+#    cmayor = b
+#    bmedio = c
+#    amenor = a
+#    print (f"{amenor},{bmedio},{cmayor}")
+#elif c > a and c > b and b > a:
+ #   cmayor = c
+  #  bmedio = b
+ #   amenor = a
+ #   print (f"{amenor},{bmedio},{cmayor}")
+#elif c > a and c > b and a > b:
+  #  cmayor = c
+  #  bmedio = a
+  #  amenor = b
+  #print (f"{amenor},{bmedio},{cmayor}")
+#else: print('Error, caso no contemplado')
 
 
 #Ejercicio 16 
-print("\nAct16")
-year = int(input("ingrese el año: "))
-es_biciesto = year > 0 and year % 4 == 0
-print(es_biciesto)
-if year > 0 and year % 100 == 0 and year % 400 != 0:
-    print(f"{year} no es biciesto")
-elif es_biciesto == True:
-    print(f"{year} es biciesto")
-else: print("No es biciesto")
+#print("\nAct16")
+#year = int(input("ingrese el año: "))
+#es_biciesto = year > 0 and year % 4 == 0
+#print(es_biciesto)
+#if year > 0 and year % 100 == 0 and year % 400 != 0:
+ #   print(f"{year} no es biciesto")
+#elif es_biciesto == True:
+#    print(f"{year} es biciesto")
+#else: print("No es biciesto")
 
+#Ejercicio 16 
+print("\nAct16")
+year = int(input("Ingresa el año: "))
+
+multiploDe4 = year % 4 == 0
+multiploDe100 =  year % 100 == 0
+multiploDe400 = year % 400 == 0
+
+if multiploDe4 == True:
+    if multiploDe100 == True and multiploDe400 == False:
+        print("Es biciesto")
+    else: print("no es biciesto")
+else: print("Error")
+    
 #Ejercicio 17 
 print("\nAct17")
 #(a*x + b = 0)
@@ -241,4 +263,23 @@ x = int(input("Ingrese un numero entero: "))
 
 if (a*x) + b == 0:
     print(f"La solucion es ")
+
+#Ejercicio 18 
+# b²-4ac
+print("\nAct18: \n(ax2 + bx + c)")
+a = int(input("Ingresa el valor de A en la cuadratica: "))
+b = int(input("Ingresa el valor de b en la cuadratica: "))
+c = int(input("Ingresa el valor de c en la cuadratica: "))
+
+discriminante = (b**2) - (4*a*c)
+
+negativo = (-b - (discriminante ** 0.5)) / 2*a
+positivo = (-b + (discriminante ** 0.5)) / 2*a
+
+if discriminante > 0: 
+    print("La funcion tiene 2 soluciones")
+elif discriminante < 0:
+    print("La funcion no tiene solucion ")
+elif discriminante == 0:
+    print("Tiene una sola solucion")
 
