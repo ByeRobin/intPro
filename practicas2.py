@@ -176,3 +176,69 @@ if a < b:
     print(f"{b_new} es mayor que {a_new}")
 elif a > b:
     print(f"{a} es mayor que {b}")
+
+#Ejercicio 15 
+print("\nAct15")
+#Escribir un programa que pida al usuario tres enteros y los guarde en tres variables a, b y c.
+#El programa deberá luego hacer que en la variable a quede el menor de los valores recibidos, en
+#b el intermedio y en c el mayor (es decir, ordenará los valores).
+
+a = int(input("Ingrese un numero entero: "))
+b = int(input("Ingrese un numero entero: "))
+c = int(input("Ingrese un numero entero: "))
+print("Usted ingresó los valores:", a, b, c)
+
+if a > b and a > c and b > c:
+    cmayor = a
+    bmedio = b
+    amenor = c
+    print (f"{amenor},{bmedio},{cmayor}")
+elif a > b and a > c and c > b:
+    cmayor = a
+    bmedio = c
+    amenor = b
+    print (f"{amenor},{bmedio},{cmayor}")
+elif b > a and b > c and a > c:
+    cmayor = b
+    bmedio = a
+    amenor = c
+    print (f"{amenor},{bmedio},{cmayor}")
+elif b > a and b > c and c > a:
+    cmayor = b
+    bmedio = c
+    amenor = a
+    print (f"{amenor},{bmedio},{cmayor}")
+elif c > a and c > b and b > a:
+    cmayor = c
+    bmedio = b
+    amenor = a
+    print (f"{amenor},{bmedio},{cmayor}")
+elif c > a and c > b and a > b:
+    cmayor = c
+    bmedio = a
+    amenor = b
+    print (f"{amenor},{bmedio},{cmayor}")
+else: print('Error, caso no contemplado')
+
+
+#Ejercicio 16 
+print("\nAct16")
+year = int(input("ingrese el año: "))
+es_biciesto = year > 0 and year % 4 == 0
+print(es_biciesto)
+if year > 0 and year % 100 == 0 and year % 400 != 0:
+    print(f"{year} no es biciesto")
+elif es_biciesto == True:
+    print(f"{year} es biciesto")
+else: print("No es biciesto")
+
+#Ejercicio 17 
+print("\nAct17")
+#(a*x + b = 0)
+a = int(input("Ingrese un numero entero: "))
+b = int(input("Ingrese un numero entero: "))
+x = int(input("Ingrese un numero entero: "))
+
+if (a*x) + b == 0:
+    print(f"La solucion es ")
+
