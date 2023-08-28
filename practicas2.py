@@ -259,10 +259,11 @@ print("\nAct17")
 #(a*x + b = 0)
 a = int(input("Ingrese un numero entero: "))
 b = int(input("Ingrese un numero entero: "))
-x = int(input("Ingrese un numero entero: "))
 
-if (a*x) + b == 0:
-    print(f"La solucion es ")
+#if (a*x) + b == 0:
+
+if 
+print(f"La solucion es ")
 
 #Ejercicio 18 
 # b²-4ac
@@ -278,8 +279,10 @@ positivo = (-b + (discriminante ** 0.5)) / 2*a
 
 if discriminante > 0: 
     print("La funcion tiene 2 soluciones")
-elif discriminante < 0:
+    print(negativo, positivo)
+if discriminante < 0:
     print("La funcion no tiene solucion ")
-elif discriminante == 0:
+if discriminante == 0:
     print("Tiene una sola solucion")
+    print(-b/(2*a))
 
