@@ -148,7 +148,7 @@ print(f"El cajero soltara {billetes_de_100} billetes de 100")
 
 #Cuanto sobra
 resto_de_billetes4 = resto_de_billetes3 % 100
-print(billetes_de_100)
+print(resto_de_billetes4)
 
 #Ejercicio 18
 
