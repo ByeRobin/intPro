@@ -260,10 +260,15 @@ print("\nAct17")
 a = int(input("Ingrese un numero entero: "))
 b = int(input("Ingrese un numero entero: "))
 
-#if (a*x) + b == 0:
+if a == 0 and b == 0:
+    print(f"La solucion son todos los reales") 
 
-if 
-print(f"La solucion es ")
+x = -b/a
+if (x == 0):
+    print("la respuesta es", x)
+
+if a == 0 and b != 0:
+    print("No tiene solucion")
 
 #Ejercicio 18 
 # b²-4ac
