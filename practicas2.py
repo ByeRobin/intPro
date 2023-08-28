@@ -196,6 +196,16 @@ if b > c:
     b,c = c,b
 print(f"El mayor es {c}, el mediano es {b} y el menor es {a}")
 
+# print("\nAct15")
+# #Escribir un programa que pida al usuario tres enteros y los guarde en tres variables a, b y c.
+# #El programa deberá luego hacer que en la variable a quede el menor de los valores recibidos, en
+# #b el intermedio y en c el mayor (es decir, ordenará los valores).
+
+# a = int(input("Ingrese un numero entero: "))
+# b = int(input("Ingrese un numero entero: "))
+# c = int(input("Ingrese un numero entero: "))
+# print("Usted ingresó los valores:", a, b, c)
+
 #if a > b and a > c and b > c:
 #   cmayor = a
 #    bmedio = b
