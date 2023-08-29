@@ -11,8 +11,8 @@ print("\nAct1")
 
 i = 1
 while i <= 5:
-    num = int(input("Ingresa el num: "))
-    i = i+1
+     i = i+1
+print(i)
 
 print("\nAct2")
 #a
