@@ -14,7 +14,7 @@ print("\nAct2")
 #a
 for i in range(4,7+1):
     print(i)
-
+    
 #b
 m = int(input("ingresa un numero  natural: ")) #5
 n = int(input("ingresa un numero  natural: ")) #10
