@@ -16,16 +16,15 @@ for i in range(4,7+1):
     print(i)
     
 #b
+#b
 m = int(input("ingresa un numero  natural: ")) #5
 n = int(input("ingresa un numero  natural: ")) #10
 
-if m!= n and m > n:
+if m!= n and m < n:
     for i in range(m,n+1):
         print(i)
 
-elif m!= n and n > m:
+if m!= n and m > n:
     for i in range(n,m + 1):
         print(i)
-
-else: print("se ejecuto el else")
 
