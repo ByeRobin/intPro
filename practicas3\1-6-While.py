@@ -45,3 +45,19 @@ if  m!= n:
             print(i)
 
 print("\nAct5")
+
+i = 8
+print(i)
+while i!=3:
+    i = i -1
+    print(i)
+
+print("\nAct6")
+
+i = 15
+print(i)
+while i!=6:
+    i = i -3
+    print(i)
+
+
