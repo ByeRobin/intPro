@@ -72,3 +72,12 @@ if m!= n and m < n:
 if m!= n and m > n:
     for i in range(n,m+1,p):
         print(i)
+
+print("\nAct5")
+
+for i in range(8,3-1,-1):
+    print (i)
+
+print("\nAct6")
+for i in range(15,6-1,-3):
+    print (i)
