@@ -1,3 +1,34 @@
+print("\nAct 1")
+#a
+i = 1
+while i <= 5 :
+    print(i)
+    i = 1 + i
+
+#b
+i = 1
+num = int(input("ingresa un numero  natural: "))
+while i <= num :
+    print(i)
+    i = 1 + i
+
+print("\nAct2")
+#a
+i = 4
+while i <= 7 :
+    print(i)
+    i = 1 + i
+
+#b
+m = int(input("ingresa un valor natural M: ")) 
+n = int(input("Ingresa un valor natural N: "))
+
+while m>=n:
+    print()
+
+print("\nAct3")
+
+
 print("\nAct4")
 #a
 i = 5
@@ -45,7 +76,6 @@ if  m!= n:
             print(i)
 
 print("\nAct5")
-
 i = 8
 print(i)
 while i!=3:
@@ -59,5 +89,3 @@ print(i)
 while i!=6:
     i = i -3
     print(i)
-
-
