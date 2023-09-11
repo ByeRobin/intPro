@@ -53,3 +53,15 @@ for i in range(1,n+1):
     resultado = 2*i
     sum = sum + resultado
     print(sum)
+
+
+#b
+n = int(input("Ingresa el valor de n: "))
+
+sum = 0
+for i in range(1,n+1):
+    resultado = 2**i 
+    print("+",resultado)
+    sum = sum + resultado
+    print(sum)    
+
