@@ -54,7 +54,6 @@ for i in range(1,n+1):
     sum = sum + resultado
     print(sum)
 
-
 #b
 n = int(input("Ingresa el valor de n: "))
 
@@ -71,3 +70,12 @@ for i in range(1,n+1):
     resultado = 3**i - 2**i
     sum = sum + resultado
     print(sum)
+
+#d
+n = int(input(" n = "))
+sum = 0
+for i in range(1,n+1):
+    resultado = 1/(2**i)
+    sum = sum + resultado
+    print(sum)
+#e) En el item anterior nos vamos hacercando al 1
