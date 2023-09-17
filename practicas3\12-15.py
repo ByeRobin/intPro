@@ -50,24 +50,24 @@ print("\nAct15")
 n = int(input("Ingresa el valor de n: "))
 sum = 0
 for i in range(1,n+1):
-    resultado = 2*i
+    resultado = i*2
     sum = sum + resultado
     print(sum)
 
 #b
 n = int(input("Ingresa el valor de n: "))
-
 sum = 0
 for i in range(1,n+1):
     resultado = 2**i 
     print("+",resultado)
     sum = sum + resultado
     print(sum)    
+
 #c
 n = int(input(" n = "))
 sum = 0
 for i in range(1,n+1):
-    resultado = 3**i - 2**i
+    resultado = i**3 - i**2
     sum = sum + resultado
     print(sum)
 
@@ -75,7 +75,8 @@ for i in range(1,n+1):
 n = int(input(" n = "))
 sum = 0
 for i in range(1,n+1):
-    resultado = 1/(2**i)
+    resultado = 1/(i**2)
     sum = sum + resultado
     print(sum)
+
 #e) En el item anterior nos vamos hacercando al 1
