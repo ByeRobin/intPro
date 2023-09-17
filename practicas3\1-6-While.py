@@ -27,6 +27,27 @@ while m>=n:
     print()
 
 print("\nAct3")
+#a
+i = 10
+while i < 10 + 5:
+    i = i + 1
+    print(i)
+
+#b
+n = int(input("Ingrese un numero natural: "))
+count = 0
+while count < 5:
+    count = count+ 1
+    print(n + count)
+
+#c
+n = int(input("Ingrese un numero natural: "))
+c = int(input("Ingrese un numero natural: "))
+
+count = 0
+while count < c:
+    count = count+ 1
+    print(n+count)
 
 
 print("\nAct4")
