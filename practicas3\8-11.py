@@ -119,29 +119,19 @@ if n > 0 and c > 0 and n > c:
             if medidor_de_divisores == c:
                 break
 
-# #f
-# n = int(input("Ingresa un valor n al que le calcularemos divisores: "))
-# c = int(input("Ingresa un valor c que refleje cuantos ultimos divisores: "))
+#f
 
-# if n > 0 and c > 0 and n > c:
-#     medidor_de_divisores = 0
-#     for i in range(1,n):
-#         if n % i == 0:
-#             print(i,"Es divisor de ",n)
-#             medidor_de_divisores = medidor_de_divisores + 1
-#     print(medidor_de_divisores)
-#             # if medidor_de_divisores % n == 0:
+n = int(input("Ingresa un valor n: "))
+c = int(input("Ingresala cuantos ultimos divisores de n mostrar: "))
 
-# m = int(input("Ingresa el numero al que calcularle los divisores: "))
-# b = int(input("Elige cuantos ultimos divisores quieres mostrar: "))
-# iteracion = m
-# stop = 0
-# while iteracion <= m and iteracion > 0:
-#     if m % iteracion == 0 :
-#         stop = stop + 1
-#         print(iteracion, "es divisor de", m)
-#         if stop >= b : iteracion = m + 1
-#         else : iteracion = iteracion - 1
-#     else : iteracion = iteracion - 1
-
-#No entiendo
+i = n
+contador = 0
+stop = 0
+while i <= n:
+    if n % i == 0:
+        stop = stop + 1
+        print(i,"es divisor de",n)
+        if stop >= c: 
+            i = n + 1
+        else: i = i - 1
+    else: i = i - 1
