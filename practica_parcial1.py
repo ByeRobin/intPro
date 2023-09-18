@@ -18,40 +18,40 @@ if descuentan_el_dia == True:
     else: print("No me adhiero, voy a trabajar")
 else: print("No me adhiero, voy a trabajar")
 
-# print("\nAct3")
+print("\nAct3")
 
-# chair1 = input("ingresa tu cadena: ")
-# chair2 = input("ingresa tu cadena: ")
+chair1 = input("ingresa tu cadena: ")
+chair2 = input("ingresa tu cadena: ")
 
-# newchair = ""
+newchair = ""
 
-# contador = 1
-# for i in chair1:
-#     if contador % 2 != 0:
-#         newchair = newchair + i
-#     contador = contador + 1
+contador = 1
+for i in chair1:
+    if contador % 2 != 0:
+        newchair = newchair + i
+    contador = contador + 1
 
-# contador = 1
-# for i in chair2:
-#     if  contador % 2 == 0:
-#         newchair = newchair + i
-#     contador = contador + 1
+contador = 1
+for i in chair2:
+    if  contador % 2 == 0:
+        newchair = newchair + i
+    contador = contador + 1
 
-# print(newchair)
+print(newchair)
 
-# print("\nAct4")
+print("\nAct4")
 
-# terminos = int(input("Cuantos terminos deseas sumar?: "))
+terminos = int(input("Cuantos terminos deseas sumar?: "))
 
-# i = 1
-# total = 0
-# x = 2
-# y = 3
-# while i <= terminos:
-#     total = total + (x**i)/y
-#     print(x,"**",i,"/",y,"=",total)
-#     i = i + 1
-#     x = x + 1
-#     y = y + 1
+i = 1
+total = 0
+x = 2
+y = 3
+while i <= terminos:
+    total = total + (x**i)/y
+    print(x,"**",i,"/",y,"=",total)
+    i = i + 1
+    x = x + 1
+    y = y + 1
 
 
