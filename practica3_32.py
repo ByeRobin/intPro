@@ -51,10 +51,16 @@ print("\nAct mundo hola")
 string = "hola mundo"
 primera = ""
 segunda = ""
+nueva_cadena = ""
 
 for i in string:
     primera += i
-    if i != " ":
-        segunda += i
+    if i == " ":
+       ultima = primera
 
-print(segunda,primera)
+for i in string:
+    segunda = segunda+i
+    if i == " ":
+        segunda = ""
+
+print(segunda + " " + ultima)
