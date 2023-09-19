@@ -1,3 +1,16 @@
+print("/nAct30")
+char = "r"
+word = "programador"
+newword = ""
+for i in word:
+    if i != char:
+        newword += i
+    if i == char:
+        newword += "*"
+print(newword)
+
+print("\nAct32")
+
 x = input("Ingresa tu nombre: ")
 y = input("Ingresa tu apellido: ")
 z = input("Ingresa solo los numeros de tu DNI: ")
@@ -24,3 +37,24 @@ for i in x:
         legajo += i
     contador += 1 
 print(legajo)
+
+print("\nAct palindromo")
+cad = "hola"
+newcad = ""
+for char in cad:
+    newcad = char + newcad
+print(newcad)
+
+
+print("\nAct mundo hola")
+
+string = "hola mundo"
+primera = ""
+segunda = ""
+
+for i in string:
+    primera += i
+    if i != " ":
+        segunda += i
+
+print(segunda,primera)
