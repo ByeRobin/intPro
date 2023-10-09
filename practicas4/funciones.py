@@ -69,3 +69,6 @@ def esPrimo_v2(a):
             print(a," no es primo")
         else:
             print(a," es primo")
+
+def esPrimo_pura(a):
+    return "es primo" if divisores(a) > 2 else "no es primo"
