@@ -47,7 +47,6 @@ def esPrimo(a):
             print(f"{a} no es primo")
         else: 
             print(f"{a} es primo")
-print(esPrimo(-20))
 
 
 def esPrimo_v2(a):
