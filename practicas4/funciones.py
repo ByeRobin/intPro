@@ -37,38 +37,7 @@ def esPrimo(a):
         else: 
             print(f"{a} es primo ")
     else: 
-        div = 0
-        for i in range(a,(a*-1)+1):
-            if i == 0:
-                pass
-            if a % 1 == 0:
-                div += 1
-        if div > 2:
-            print(f"{a} no es primo")
-        else: 
-            print(f"{a} es primo")
-
-
-def esPrimo_v2(a):
-    if a >0:
-        div = 0
-        for i in range(1,a+1):
-            if a % i == 0:
-                div += 1
-        if div > 2:
-            print(a," no es primo")
-        else:
-            print(a," es primo")
-    else: 
-        div = 0
-        for i in range(a,0):
-            div += 1
-        for i in range(1,(a*-1)+1):
-            div += 1
-        if div > 2:
-            print(a," no es primo")
-        else:
-            print(a," es primo")
+        print(f"{a} no es primo")
 
 def esPrimo_pura(a):
     return "es primo" if divisores(a) > 2 else "no es primo"
