@@ -25,3 +25,48 @@ def divisores(a):
         for i in range(1,(a*-1)+1,):
             if a % i == 0:
                 print(f"{i} es divisor de {a}")
+
+def esPrimo(a):
+    if a > 0:
+        div = 0
+        for i in range(1,a+1):
+            if a % i == 0:
+                div += 1
+        if div > 2:
+            print(f"{a} no es primo")
+        else: 
+            print(f"{a} es primo ")
+    else: 
+        div = 0
+        for i in range(a,(a*-1)+1):
+            if i == 0:
+                pass
+            if a % 1 == 0:
+                div += 1
+        if div > 2:
+            print(f"{a} no es primo")
+        else: 
+            print(f"{a} es primo")
+print(esPrimo(-20))
+
+
+def esPrimo_v2(a):
+    if a >0:
+        div = 0
+        for i in range(1,a+1):
+            if a % i == 0:
+                div += 1
+        if div > 2:
+            print(a," no es primo")
+        else:
+            print(a," es primo")
+    else: 
+        div = 0
+        for i in range(a,0):
+            div += 1
+        for i in range(1,(a*-1)+1):
+            div += 1
+        if div > 2:
+            print(a," no es primo")
+        else:
+            print(a," es primo")
