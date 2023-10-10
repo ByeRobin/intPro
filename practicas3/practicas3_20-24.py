@@ -10,22 +10,20 @@ for i in range(m,n+1):
 
 izquierda = int(input("n == "))
 derecha = int(input("m == "))
+der = n
+i = 0
+cont = 0
 
-stop = 0
-n = izquierda 
-left = izquierda
-contador = 0
-
-while stop < 1:
-    print(left, n+contador)
-    if n+contador < derecha:
-        contador = contador + 1
+while i < 1:
+    print(n,der+cont)
+    if  der + cont < m:
+        cont += 1
     else:
-        contador = 0
-        left = left + 1
-    if left == derecha and n + contador == derecha:
-        stop = 1
-        print(left,n + contador)
+        cont = 0
+        n += 1
+    if n == m and der + cont == m:
+        i = 3
+        print(n,der+cont)
 
 print("\nAct21")
 #a
