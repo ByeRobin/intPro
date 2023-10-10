@@ -2,6 +2,12 @@ print("\nAct20")
 
 #a,b
 
+m = 4
+n = 6
+for i in range(m,n+1):
+    for j in range(m,n+1):
+        print(i,j)
+
 izquierda = int(input("n == "))
 derecha = int(input("m == "))
 
