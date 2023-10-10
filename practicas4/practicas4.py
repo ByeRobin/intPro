@@ -93,3 +93,17 @@ def divisores(a):
                 print(f"{i} es divisor de {a}")
 
 print(divisores(-20))
+
+print("\nAct8,b)")
+
+def esPrimo_pura(a):
+    return "es primo" if divisores(a) > 2 else "no es primo"
+
+print("\nAct8,d)")
+
+def primo_En_Int(a):
+    for i in range (1,a+1):
+        if a % i == 0 and esPrimo_pura(i) == True:
+                print(i)
+
+print(primo_En_Int(20))
