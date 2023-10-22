@@ -82,28 +82,97 @@ print(-4, "al cubo:", elevarAlCubo(-4))
 print(-5, "al cubo:", elevarAlCubo(-5))
 
 print("\nAct8,a)")
-def divisores(a):
+def Cantidad_divisores(a):
     if a > 0:
-        for i in range(1,a+1):
-            if a % i == 0:
-                print(f"{i} es divisor de {a}")
+        div = 0
+        for i in range(1, a + 1):
+            if a % i == 0: 
+                div += 1
+        return div
     else:
-        for i in range(1,(a*-1)+1,):
+        for i in range(1, (a * -1) + 1):
             if a % i == 0:
-                print(f"{i} es divisor de {a}")
+                div += 1
+        return div
 
-print(divisores(-20))
 
 print("\nAct8,b)")
-
-def esPrimo_pura(a):
-    return "es primo" if divisores(a) > 2 else "no es primo"
+def esPrimo(a):
+    if CantDivisores(a) > 2:
+        return False  
+    else: 
+        return True
+    
+print("\nAct8,c)")
+#xd
 
 print("\nAct8,d)")
+def divisores (a):
+    divisor = 0
+    for i in range(1,a+1):
+        if a % i == 0:
+            print(i)
 
-def primo_En_Int(a):
-    for i in range (1,a+1):
-        if a % i == 0 and esPrimo_pura(i) == True:
-                print(i)
+print("\nAct9,a)")
+def MayorQue(a,b): 
+    if  a > b:
+        return a
+    else:
+        return b
 
-print(primo_En_Int(20))
+print("\nAct9,b)")
+def MayorQueX3(a,b,c): 
+    if  a > b and a > c:
+        return a
+    if b > a and b > c:
+        return b
+    else:
+        return c
+
+print("\nAct10")
+def potencia(a,b):
+    return a ** b
+
+print('\nAct11,a)')
+def sumDiv(a):
+    total = 0
+    for i in range(1,a+1):
+        if a % i == 0 and not i == a:
+            total = total + i
+    return total
+
+print('\nAct11,b)')
+def numPerfecto(a):
+    if sumDiv(a) == a:
+        return True
+
+print('\nAct11,c)')
+def numAbundante(a):
+    if MayorQue(sumDiv(a), a):
+        return True
+    else:
+        return False
+
+# print('\nAct12')
+# def numeroPoderoso(a):
+#     if esPrimo(int(divisores(a))):
+#         if a%(int(divisores(a))**2) == 0:
+#             print(esPrimo(a),int(divisores(a))**2) 
+            
+# print(numeroPoderoso(36))   
+
+
+print('\nAct15')
+def Estrellado(a):
+    newchar = '**'
+    for i in a:
+        newchar += '*'
+    print('*'+newchar+'*\n'+'*',a,'*'+'\n'+'*'+newchar+'*')
+    
+print('\nAct16,a)')
+def RepChar(a,b):
+    charREP = 0
+    for i in a:
+        if i == b:
+            charREP += 1
+    print(f'La letra {b} se repitio {charREP} veces')
