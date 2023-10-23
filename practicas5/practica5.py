@@ -37,6 +37,17 @@ div = []
 n = int(input("Ingresa un numero entero: "))
 print(divisoresList(n,div))
 
+print("\nAct4")
+def laMasCorta(lista,lista2):
+    if len(lista) > len(lista2):
+        return lista2
+    if len(lista2) > len(lista):
+        return lista
+    else:
+        return lista
+    
+print("\nAct5")
+
 print("\nAct7")
 
 
