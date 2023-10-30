@@ -59,7 +59,20 @@ def sonFactores(n,lista):
         return True
     else:
         return False
-        
+
+print("\nAct6")
+
+def elementoRepetido(lista):
+    nuevaLista = []
+    for i in lista:
+        if i not in nuevaLista:
+            nuevaLista.append(i)
+    print(lista,nuevaLista)
+    if nuevaLista == lista:
+        return False
+    else:
+        return True
+
 print("\nAct7")
 
 def dondeAparece(lista,blanco):
