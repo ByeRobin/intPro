@@ -48,8 +48,19 @@ def laMasCorta(lista,lista2):
     
 print("\nAct5")
 
+def sonFactores(n,lista):
+    divisores = 0
+    for i in lista:
+        if n % i == 0:
+            divisores += 1
+    print(divisores,len(lista))
+    if divisores == len(lista):
+        print(divisores,len(lista))
+        return True
+    else:
+        return False
+        
 print("\nAct7")
-
 
 def dondeAparece(lista,blanco):
     for i in range(len(lista)):
