@@ -102,3 +102,12 @@ def maximo(lista):
         if i > max:
             max = i
     return max
+
+print("\nAct10")
+
+def maximoIndice(lista):
+    max = 0
+    for i in lista:
+        if i > max:
+            max = i
+    return dondeAparece(lista,max)
