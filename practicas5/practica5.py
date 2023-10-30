@@ -85,3 +85,20 @@ print(numeros,"\n ")
 blanco = int(input("Ingresa un numero del 1 al 10: "))
 print("\n",dondeAparece(numeros,blanco))
 
+print("\nAct8")
+
+def promFloat(lista):
+    num = 0
+    for i in lista:
+        num += i
+    print(num)
+    return num / len(lista)
+
+print("\nAct9")
+
+def maximo(lista):
+    max = 0
+    for i in lista:
+        if i > max:
+            max = i
+    return max
