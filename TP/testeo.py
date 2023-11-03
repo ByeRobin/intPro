@@ -1,50 +1,37 @@
 
 import math
 import random
-# def productos():
-#     with open("productos.txt") as file_object:
-#         productos = file_object.read()
-#         return productos
+def productos():
+    with open("productos.txt") as file_object:
+        productos = file_object.read()
+        return productos
 
-
-# def agregarLista(lista,algo):
-#     lista = []
-#     lista.append(algo)
-
-# def lectura(lista):
-#     newList = []
-#     contador = 0
-#     newChar = ""
-#     for i in productos():
-            
-        
-        
-# listaProductos = []
-# print(lectura(listaProductos))
-
-# print(lectura())
-
-cadena = "Arroz,1001,1037\nYerba mate,4546,4904"
-contador = 0
-lista = []
-Char = ""
-newChar = ""
-nuevaLista = []
-contador = 0
-for i in cadena:
-    if i != "," or i != '\n':
-        newChar += i
-    if i == '\n':
-        lista.append(nuevaLista)
-        nuevaLista = []
-    if i == "," or i == '\n':
-        contador += 1
-        if contador <= 3 :
+cadena = productos()
+def lectura(cadena):
+    contador = 0
+    lista = []
+    Char = ""
+    newChar = ""
+    nuevaLista = []
+    for i in cadena:
+        if i == "\n":
+            Char += ","
+        else:
+            Char += i
+    for i in Char:
+        if i != ",":
+            newChar += i
+        else:
             nuevaLista.append(newChar)
-            contador = 0
-        newChar = Char
+            newChar = ""
+            contador += 1
+            if contador % 3 == 0 and contador != 1:
+                lista.append(nuevaLista)
+                nuevaLista = []
+    return lista
 
-    print(newChar)
-    print(lista)
+print(lectura(cadena))
 
-#print(lista)
+def buscar_producto(lista_productos):
+    i = random.randrange(0,len(lista_productos)+1)
+    return lista_productos[i]
